@@ -1,25 +1,59 @@
 html{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body{
   background-color: hsl(0, 0%, 0%);
-  color: hsl(0, 0%, 100%);
-  padding: 1.875rem 3.75rem;
+  color: hsl(0, 0%, 50%);
   font-family: 'Inter', sans-serif;
 }
 
+p{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Prata', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 60px;
+  font-weight: 200;
+  width: 85%;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+p.top{
+  width: 65%;
+}
+
 /* Nav Bar Properties */
-.nav-bar-body{
+.nav-bar-body, .footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.nav-bar-body{
+  margin-bottom: 40px;
 }
 
 .nav-bar-name{
   font-size: 20px;
   font-family: 'Prata', serif;
+  color: white;
 }
 
 .nav-bar-tabs{
@@ -38,7 +72,7 @@ a:last-child{
 }
 
 
-.nav-bar-button{
+button{
   padding: 12px 25px;
   text-decoration: none;
   background-color: hsl(54, 100%, 55%);
@@ -55,4 +89,85 @@ a:hover{
 
 button:hover{
   opacity: 75%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-top{
+  max-width: 75%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+p{
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.main-logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 4rem;
+  margin-top: 50px;
+}
+
+.main-tabs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  grid-gap: 20rem;
+  padding-bottom: 3rem;
+}
+
+.main-two{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+}
+
+.main-three{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+p.text{
+  width: 95%;
+  text-align: justify;
+}
+
+h3{
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.img{
+  width: 100%;
+}
+
+.main-two, .footer{
+  background-color: rgb(56, 58, 67);
+}
+
+.footer{
+  margin-top: 50px;
+}
+
+.social-media-icons > img{
+  margin-right: 10px;
 }
